@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Contact book</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="contact__header">Contact book</h1>
+        <div class="contact__wrap">
+            <div class="contact__new">
+                <h2 class="contact__title">New contact</h2>
+                <form class="contact__form">
+                    <input type="text" class="contact__name" placeholder="Name" required>
+                    <input type="text" class="contact__relationship" list="rel-list" placeholder="Relationship" required>
+                    <datalist id="rel-list">
+                        <option>Family</option>
+                        <option>Friend</option>
+                        <option>Relative</option>
+                        <option>Classmate</option>
+                    </datalist>
+                    <input type="number" class="contact__phone" placeholder="Phone" required>
+                    <button class="contact__btn" type="submit">Add contact</button>
+                </form>
+            </div>
+            <div class="contact__list-wrap">
+                <div class="contact__list-top">
+                    <h2 class="contact__title">Contacts</h2>
+                    <input type="search" id="search" placeholder="Search...">
+                </div>
+                <div class="tags">
+                    <button class="tag btn all">All</button>
+                    <button class="tag btn classmate">Classmate</button>
+                    <button class="tag btn friend">Friend</button>
+                    <button class="tag btn family">Family</button>
+                    <button class="tag btn relative">Relative</button>
+                </div>
+                <ul class="contact__list list">
+                    <li class="list__item">
+                        <h3 class="name">Sirotillo Pulatov</h3>
+                        <a href="#" class="phone">+998943004055</a>
+                        <div class="icons">
+                            <a class="#" href="#"><i class="fas fa-phone-square-alt"></i></a>
+                            <a href="#"><i class="fas fa-envelope-square"></i></a>
+                        </div>
+                        <button class="delete__btn remove"><i class="fas fa-trash"></i></button>
+                        <p class="relation">family</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
