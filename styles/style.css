@@ -160,10 +160,6 @@ img {
     transition: all 0.2s ease-in-out;
 }
 
-.list__item:hover {
-  padding: 10px 40px;
-}
-
 .list__item:hover .icons {
   left: 10px;
   opacity: 1;

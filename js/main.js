@@ -26,13 +26,6 @@ add_btn.addEventListener('click', (e) => {
         let paragraph = document.createElement("p");
         let anchor = document.createElement("a");
         let icons = document.createElement('div')
-        let phoneIcon = document.createElement('i').className('fas fa-phone-square-alt')
-        let messageIcon = document.createElement('i').className('fas fa-envelope-square')
-
-        
-
-        icons.appendChild(phoneIcon);
-        icons.appendChild(messageIcon);
         
         header3.textContent = user.userName;
         paragraph.textContent = user.userRelate;
@@ -144,10 +137,3 @@ searchInput.addEventListener('keyup', (e) => {
     })
 })
 
-
-// deleting items
-let remove = document.querySelector('.remove');
-
-remove.addEventListener('click', (e) => {
-    confirm('Are you gonna delete this contact?') ? e.target.parentElement.parentElement.remove() : false;
-})
